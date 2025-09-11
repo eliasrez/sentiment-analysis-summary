@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+import os
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -8,11 +10,8 @@ import argparse
 from movie_summarizer import MovieSummarizer
 from sentiment_analyzer import SentimentAnalyzer
 
-API_TOKEN = "PUT_YOUR_TMDB_API_TOKEN"
-
-
 def main():
-
+    
     parser = argparse.ArgumentParser(description="Movie Review Utility")
     parser.add_argument("--task", choices=["sentiment", "summarize"], required=True,
                         help="Choose 'sentiment' for sentiment analysis or 'summarize' for movie review summarization.")
@@ -27,6 +26,9 @@ def main():
         result = analyzer.predict(args.text)
         print(result)
     elif args.task == "summarize":
+        load_dotenv()  # loads variables from .env
+        API_TOKEN = os.getenv("TMDB_API_TOKEN")
+
         summarizer = MovieSummarizer(API_TOKEN)
         if not args.movie_id:
             raise ValueError("Please provide --movie_id for summarization")

@@ -6,4 +6,5 @@ dependencies = [
     "numpy",
     "transformers",
     "torch",
+    "dotenv>=0.9.9",
 ]

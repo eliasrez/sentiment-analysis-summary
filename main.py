@@ -8,7 +8,7 @@ import argparse
 from movie_summarizer import MovieSummarizer
 from sentiment_analyzer import SentimentAnalyzer
 
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMWZjNTYwMzBkNzYzNWQ1OGFjNGIwM2NkNzJjZjhjOCIsIm5iZiI6MTc1NzQyNjM5MC4yOTMsInN1YiI6IjY4YzAzMmQ2NWUwZDQ3YjA3NThjZmE4ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EaD3Lo3dwL8EddOJRGcI0BoDM-SaEVVPZqr5A8uZwxs"
+API_TOKEN = "PUT_YOUR_TMDB_API_TOKEN"
 
 
 def main():

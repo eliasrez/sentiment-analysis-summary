@@ -1,6 +1,8 @@
-# This is for learning purpose and goal is to learn how to train and evaluate a model.
-# Instead of training a model from scratch, I can use a pre-trained, state-of-the-art model designed specifically for this task. 
-# Models from the Hugging Face library like BERT, RoBERTa, or DistilBERT are already trained on massive amounts of text and are highly effective for sentiment analysis.
+Note: This is for learning purpose and goal is to learn how to train and evaluate a model. Instead of training a model from scratch, 
+I can use a pre-trained, state-of-the-art model designed specifically for this task. Models from the Hugging Face library like BERT, RoBERTa,
+or DistilBERT are already trained on massive amounts of text and are highly effective for sentiment analysis.
+
+This project also uses UV package manager from Astral
 
 # 🎬 Movie Reviews Analysis & Summarization
 

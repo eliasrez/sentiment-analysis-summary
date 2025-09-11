@@ -1,0 +1,9 @@
+[project]
+name = "sentiment-analysis-summary"
+version = "0.1.0"
+dependencies = [
+    "tf-keras",
+    "numpy",
+    "transformers",
+    "torch",
+]

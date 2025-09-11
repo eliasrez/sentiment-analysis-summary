@@ -4,6 +4,7 @@ or DistilBERT are already trained on massive amounts of text and are highly effe
 
 This project also uses UV package manager from Astral
 
+
 # 🎬 Movie Reviews Analysis & Summarization
 
 This project combines **sentiment analysis** and **summarization** of movie reviews.  

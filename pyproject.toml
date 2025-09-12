@@ -7,4 +7,6 @@ dependencies = [
     "transformers",
     "torch",
     "dotenv>=0.9.9",
+    "nltk>=3.9.1",
+    "tensorflow-datasets>=4.9.9",
 ]

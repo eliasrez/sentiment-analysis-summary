@@ -7,6 +7,9 @@ wheels/
 *.egg-info /
 models/
 dataset/
+embeddings/*
+logs/
+output.json
 .env
 # Virtual environments
 .venv

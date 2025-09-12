@@ -19,14 +19,19 @@ def main():
     parser.add_argument("--movie_id", type=int, help="TMDb movie ID for summarization")
     args = parser.parse_args()
 
+    # loads variables from .env file
+    load_dotenv()  
+            
     if args.task == "sentiment":
-        analyzer = SentimentAnalyzer()
+        EMBEDDINGS_GLOVE_PATH = os.getenv("EMBEDDINGS_GLOVE_PATH")
+        # just pass glove_path switch to pre-trained embeddings.
+        analyzer = SentimentAnalyzer(glove_path=EMBEDDINGS_GLOVE_PATH, use_raw=True)
         if not args.text:
             raise ValueError("Please provide --text for sentiment analysis")
+
         result = analyzer.predict(args.text)
         print(result)
     elif args.task == "summarize":
-        load_dotenv()  # loads variables from .env
         API_TOKEN = os.getenv("TMDB_API_TOKEN")
 
         summarizer = MovieSummarizer(API_TOKEN)

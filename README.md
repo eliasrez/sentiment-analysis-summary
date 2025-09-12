@@ -36,6 +36,23 @@ Clone this repo and install dependencies:
 git clone https://github.com/your-username/movie-reviews-analysis.git
 cd movie-reviews-analysis
 
+
+# To use glove embeddings (for better sentiment analysis)
+Pick a size depending on tradeoff between accuracy and speed (e.g., glove.6B.100d.txt).
+
+wget http://nlp.stanford.edu/data/glove.6B.zip
+unzip glove.6B.zip
+
+This gives you files like:
+glove.6B.50d.txt
+glove.6B.100d.txt
+glove.6B.200d.txt
+glove.6B.300d.txt
+
+copy the file you want to use to an ./embeddings directory. 
+Note: Make sure to update the code to use the proper file and make sure to update the embedding_dim to match size used.
+
+
 #  To run locally using uv
 
 # Movie reviews summarization

@@ -1,9 +1,3 @@
-Note: This is for learning purpose and goal is to learn how to train and evaluate a model. Instead of training a model from scratch, 
-I can use a pre-trained, state-of-the-art model designed specifically for this task. Models from the Hugging Face library like BERT, RoBERTa,
-or DistilBERT are already trained on massive amounts of text and are highly effective for sentiment analysis.
-
-This project also uses UV package manager from Astral
-
 
 # 🎬 Movie Reviews Analysis & Summarization
 
@@ -26,6 +20,7 @@ You can either:
 - Summarize reviews in **batches** to avoid token limits (`MovieSummarizer`)  
 - Combine both: get **positive-only** or **negative-only** summaries (sentiment-aware summarization)  
 
+Note: This project also uses UV package manager from Astral
 ---
 
 ## ⚙️ Installation
@@ -39,6 +34,10 @@ cd movie-reviews-analysis
 
 # To use glove embeddings (for better sentiment analysis)
 Pick a size depending on tradeoff between accuracy and speed (e.g., glove.6B.100d.txt).
+
+Note: This is for learning purpose and goal is to learn how to train and evaluate a model. Instead of training a model from scratch, 
+I can use a pre-trained, state-of-the-art model designed specifically for this task. Models from the Hugging Face library like BERT, RoBERTa,
+or DistilBERT are already trained on massive amounts of text and are highly effective for sentiment analysis.
 
 wget http://nlp.stanford.edu/data/glove.6B.zip
 unzip glove.6B.zip

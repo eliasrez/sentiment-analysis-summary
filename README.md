@@ -21,6 +21,7 @@ You can either:
 - Combine both: get **positive-only** or **negative-only** summaries (sentiment-aware summarization)  
 
 Note: This project also uses UV package manager from Astral
+
 ---
 
 ## ⚙️ Installation

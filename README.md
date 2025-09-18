@@ -56,14 +56,37 @@ Note: Make sure to update the code to use the proper file and make sure to updat
 #  To run locally using uv
 
 # Movie reviews summarization
-uv run python main.py --task summarize --movie_id 550
+```
+# 238 movie id: The Godfather
+uv run python main.py --task summarize --movie_id 238
 
+# output:
+The Godfather revolves around the Corleone’s, an Italian family with deep roots in the New York City mafia.
+As a film that ranks as high as other masterpieces including Citizen Kane, Pulp Fiction and 12 Angry Men.
+The Godfather is considered by most to be one of the greatest ever made.
+```
 # Sentiment Analysis
+```
 uv run python main.py --task sentiment --text "I didn't like the movie, it was terrible"
 
+output:
+{'text': "I didn't like the movie, it was terrible", 'sentiment': 'Negative', 'probability': 0.1905806064605713}
+
+```
+or 
+```
+uv run python main.py --task sentiment --text "greatest movie of all time. Fantastic to see on the big screen."
+
+output:
+{'text': 'greatest movie of all time. Fantastic to see on the big screen.', 'sentiment': 'Positive', 'probability': 0.9755520224571228}
 # to run inside docker
+```
+
+
+Building and running a Docker image
+```
 docker build -t sentiment-analysis-app .
 docker run sentiment-analysis-app
-
+```
 
 
